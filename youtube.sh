@@ -27,7 +27,7 @@ sudo curl 'https://raw.githubusercontent.com/kboghdady/youTube_ads_4_pi-hole/mas
 wait 
 
 # check to see if gawk is installed. if not it will install it
-dpkg -l | grep -qw gawk || sudo apt-get install gawk -y
+dpkg -l | grep -qw gawk || sudo apt-get update | sudo apt-get install gawk -y
 
 wait 
 # remove the duplicate records in place
